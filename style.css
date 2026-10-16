@@ -1,6 +1,6 @@
 body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color:lightblue;
+    background-color:rgb(48, 114, 136);
     color:garnet;
     margin:0;
     padding:0;
@@ -24,17 +24,67 @@ main{
     max-width: 700px;
     margin: 30px auto;
     padding: 0 20px;
-    color: rgb(43, 108, 128);
+    color: brown
 }
 .top-item{
     display: flex;
     align-items: center;
-    background-color: rgb(128, 179, 192);
+    background-color: rgb(100, 0, 8);
     border-radius: 10px;
     padding: 15px 20px;
     margin-bottom: 15px;
-    box-shadow: 0 2px 8px rgb(0, 35, 68);
-    gap: 15px;
+    box-shadow: 0 5px 100px rgb(2, 255, 221);
+    gap: 18px;
     transition: transform 0.3s ease, box-shadow 0.3 ease;
 
+}
+
+.top-item:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20 rgb(0, 255, 221);
+
+}
+
+.top-item .posicao{
+    font-size: 30px;
+    font-weight: bold;
+    color: brown;
+    width: 40px;
+}
+
+.top-item img{
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.top-item .info{
+    flex: 1;
+
+}
+
+.top-item .info h2{
+    margin: 0 0 10px 0;
+    font-size: 14px;
+
+}
+
+.top-item .info p{
+    margin: 0 0 10px 0;
+    color: rgb(194, 60, 60);
+    font-size: 14px;
+}
+
+.botao-site{
+    display: inline-block;
+    background-color: rgb(142, 190, 212);
+    color: rgb(39, 81, 105);
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
 }
